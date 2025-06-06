@@ -1,0 +1,179 @@
+.user-details-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .add-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  
+  .add-button:hover {
+    background-color: #45a049;
+  }
+  
+  .table-container {
+    overflow-x: auto;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+  }
+  
+  .user-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+  }
+  
+  .table-header {
+    background-color: #f2f2f2;
+  }
+  
+  .table-header th {
+    padding: 12px 15px;
+    text-align: left;
+    font-weight: bold;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .table-row:nth-child(even) {
+    background-color: #f8f8f8;
+  }
+  
+  .table-cell {
+    padding: 12px 15px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .action-cell {
+    white-space: nowrap;
+  }
+  
+  .edit-button, .delete-button {
+    margin-right: 5px;
+    padding: 6px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+  }
+  
+  .edit-button {
+    background-color: #2196F3;
+    color: white;
+  }
+  
+  .edit-button:hover {
+    background-color: #0b7dda;
+  }
+  
+  .delete-button {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  .delete-button:hover {
+    background-color: #da190b;
+  }
+  
+  .loading-state, .error-state {
+    text-align: center;
+    padding: 20px;
+    font-size: 16px;
+  }
+  
+  .error-state {
+    color: #f44336;
+  }
+  
+  /* Modal Styles */
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 800px;
+    max-width: 90%;
+    max-height: 90vh;
+    overflow-y: auto;
+  }
+  
+  .confirmation-dialog {
+    width: 350px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+  }
+  
+  .form-input {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  .modal-buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+  }
+  
+  .submit-button, .cancel-button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 10px;
+  }
+  
+  .submit-button {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .submit-button:hover {
+    background-color: #45a049;
+  }
+  
+  .cancel-button {
+    background-color: #f1f1f1;
+    color: #333;
+  }
+  
+  .cancel-button:hover {
+    background-color: #e1e1e1;
+  }
+  
+  /* React-Select Custom Styling */
+  .react-select-container {
+    width: 100%;
+  }

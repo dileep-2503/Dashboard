@@ -1,0 +1,169 @@
+.table-container {
+    overflow-x: auto;
+    margin: 20px;
+  }
+  
+  .table-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .empty-message {
+    text-align: center;
+    padding: 1rem 0;
+  }
+  
+  .error-message {
+    text-align: center;
+    padding: 1rem 0;
+    color: #ef4444;
+  }
+  
+  .loading-message {
+    text-align: center;
+    padding: 1rem 0;
+  }
+  
+  .quote-table {
+    min-width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    border: 1px solid #e5e7eb;
+  }
+  
+  .table-header {
+    background-color: #f3f4f6;
+  }
+  
+  .table-header th {
+    padding: 0.5rem 1rem;
+    border-bottom: 1px solid #e5e7eb;
+    text-align: left;
+  }
+  
+  .table-row {
+    transition: background-color 0.2s;
+  }
+  
+  .table-row:hover {
+    background-color: #f9fafb;
+  }
+  
+  .table-cell {
+    padding: 0.5rem 1rem;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  
+  .actions-cell {
+    text-align: center;
+  }
+  
+  .location-item {
+    font-size: 0.875rem;
+  }
+  
+  .section-tag, .component-tag, .location-item {
+    display: inline-block;
+    background-color: #dbeafe;
+    color: #1e40af;
+    font-size: 0.75rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    margin-right: 0.25rem;
+    margin-bottom: 0.25rem;
+  }
+  
+  .edit-button {
+    background-color: #3b82f6;
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 0.25rem;
+    margin-right: 0.5rem;
+    transition: background-color 0.2s;
+  }
+  
+  .edit-button:hover {
+    background-color: #2563eb;
+  }
+  
+  .delete-button {
+    background-color: #ef4444;
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 0.25rem;
+    transition: background-color 0.2s;
+  }
+  
+  .delete-button:hover {
+    background-color: #dc2626;
+  }
+
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 800px;
+    max-height: 90%;
+    overflow-y: auto;
+  }
+  
+  .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e5e7eb;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .modal-close-button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .modal-footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .submit-button, .cancel-button {
+    padding: 8px 15px;
+    border-radius: 4px;
+  }
+  
+  .submit-button {
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+  }
+  
+  .cancel-button {
+    background-color: #f3f4f6;
+    color: #374151;
+    margin-bottom: 10px;
+    border: 1px solid #d1d5db;
+  }
+
+  .addon-cover-group {
+    display: flex;
+    column-gap: 10px;
+  }

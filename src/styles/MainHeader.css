@@ -1,0 +1,306 @@
+/* MainHeader.css */
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 0.75rem 1rem;
+  height: 64px;
+}
+
+/* Left section */
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.burger-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 12px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  color: #0e3b76;
+}
+
+.burger-button:hover {
+  background-color: #f3f4f6;
+}
+
+.brand-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-placeholder {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  margin-right: 12px;
+}
+
+.logo-placeholder img {
+  width: 100%;
+}
+
+.brand-text h1 {
+  font-size: 23px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 700;
+  color: #0e3b76;
+  margin: 0;
+}
+
+.brand-text p {
+  font-size: 13px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #6b7280;
+  margin: 0;
+}
+
+/* Center section */
+.header-center {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  max-width: 500px;
+  margin: 0 24px;
+}
+
+.header-center h3 {
+  color: #0e3b76;
+}
+
+.search-container {
+  position: relative;
+  width: 100%;
+}
+
+.search-input {
+  width: 100%;
+  padding: 8px 12px 8px 36px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.25);
+}
+
+.search-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #9ca3af;
+}
+
+/* Right section */
+.header-right {
+  display: flex;
+  width: 200px;
+  justify-content: end;
+  align-items: center;
+  gap: 16px;
+}
+
+.quick-quote-btn {
+  background-color: #1d4ed8;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.quick-quote-btn:hover {
+  background-color: #1e40af;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.icon-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  color: #4b5563;
+  position: relative;
+}
+
+.icon-button:hover {
+  background-color: #f3f4f6;
+}
+
+.notification-indicator {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 8px;
+  height: 8px;
+  background-color: #ef4444;
+  border-radius: 50%;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .header-center {
+    display: none;
+  }
+  
+  .quick-quote-btn {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .brand-text p {
+    display: none;
+  }
+}
+
+/* Add these styles to your MainHeader.css file */
+
+/* Logout dialog overlay */
+.logout-dialog-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.logout-dialog {
+  background-color: white;
+  border-radius: 8px;
+  padding: 24px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.logout-dialog h3 {
+  color: #0e3b76;
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 18px;
+}
+
+.logout-dialog p {
+  margin-bottom: 24px;
+  color: #4b5563;
+}
+
+.logout-dialog-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+.cancel-btn {
+  padding: 8px 16px;
+  background-color: #f3f4f6;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.cancel-btn:hover {
+  background-color: #e5e7eb;
+}
+
+.logout-btn {
+  padding: 8px 16px;
+  background-color: #ef4444;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.logout-btn:hover {
+  background-color: #dc2626;
+}
+
+.action-buttons {
+  position: relative;
+}
+
+.user-dropdown {
+  position: absolute;
+  top: 45px;
+  right: 0;
+  background-color: white;
+  border-radius: 6px;
+  width: 180px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 100;
+  overflow: hidden;
+}
+
+.dropdown-item {
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+  color: #4b5563;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.dropdown-item:hover {
+  background-color: #f3f4f6;
+}
+
+.dropdown-item svg {
+  margin-right: 8px;
+  color: #6b7280;
+}
+
+/* Optional: Add a subtle animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.user-dropdown {
+  animation: fadeIn 0.2s ease-out;
+}

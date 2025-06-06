@@ -1,0 +1,137 @@
+/* RetentionBreakdownPopup.css */
+
+.retention-modal-overlay {
+    position: fixed;
+    overflow: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  .retention-modal-container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    padding: 24px;
+    width: 100%;
+    max-width: 700px;
+  }
+  
+  .retention-modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+  }
+  
+  .retention-modal-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #333;
+    margin: 0;
+  }
+  
+  .retention-close-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #666;
+    padding: 4px;
+  }
+  
+  .retention-close-button:hover {
+    color: #333;
+  }
+  
+  .retention-table-wrapper {
+    margin-bottom: 24px;
+  }
+  
+  .retention-table {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  
+  .retention-table-row {
+    display: flex;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .retention-table-row:last-child {
+    border-bottom: none;
+  }
+  
+  .header-row {
+    background-color: #e6f0ff;
+  }
+  
+  .column-header {
+    background-color: #e6f0ff;
+    font-weight: 600;
+  }
+  
+  .retention-cell {
+    padding: 10px 16px;
+  }
+  
+  .left-cell {
+    flex: 1;
+    text-align: left;
+  }
+  
+  .center-cell {
+    flex: 0.5;
+    text-align: right;
+  }
+  
+  .right-cell {
+    flex: 0.5;
+    text-align: right;
+  }
+  
+  .header-cell {
+    font-weight: 600;
+  }
+  
+  .highlight {
+    background-color: #f0f7ff;
+  }
+  
+  .total-row {
+    background-color: #f5f5f5;
+    font-weight: 700;
+  }
+  
+  .red-text {
+    color: #d32f2f;
+  }
+  
+  .retention-footer {
+    margin-top: 24px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .retention-close-btn {
+    background-color: #1976d2;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    margin-left: 10px;
+    padding: 10px 24px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .retention-close-btn:hover {
+    background-color: #1565c0;
+  }
